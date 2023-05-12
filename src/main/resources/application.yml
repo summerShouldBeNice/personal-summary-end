@@ -1,0 +1,20 @@
+# mysql
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/personal_summary_db
+    username: root
+    password: 111111
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 5
+      max-active: 20
+      max-wait: 60000
+      min-idle: 1
+      validation-query: 1
+
+mybatis-plus:
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.summary.personal_summary.bean
+
+
